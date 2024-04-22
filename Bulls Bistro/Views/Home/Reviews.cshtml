@@ -1,0 +1,72 @@
+﻿@{
+    ViewData["Title"] = "Reviews";
+}
+
+
+<!-- Main Content -->
+<main>
+    <!-- Reviews Section -->
+    <section class="reviews" id="reviews">
+
+        <!-- Existing Reviews -->
+        <div id="existing-reviews">
+            <h1>Customer Reviews</h1>
+            <br>
+            <div class="review">
+                <h3>John Doe</h3>
+                <p>4/5</p>
+                <p>This place is amazing! The food is delicious, and the service is excellent. I highly recommend it!</p>
+                <!-- Edit and Delete Options -->
+                <div class="review-options">
+                    <button class="edit-btn">Edit</button>
+                    <button class="delete-btn">Delete</button>
+                </div>
+            </div>
+            <div class="review">
+                <h3>Jane Smith</h3>
+                <p>5/5</p>
+                <p>Great experience! The ambiance is cozy, and the food is top-notch. Will definitely be back!</p>
+                <!-- Edit and Delete Options -->
+                <div class="review-options">
+                    <button class="edit-btn">Edit</button>
+                    <button class="delete-btn">Delete</button>
+                </div>
+            </div>
+            <!-- Add more dummy reviews as needed -->
+        </div>
+
+        <!-- Chart.js Chart -->
+        <div class="chart-container" style="text-align: center;">
+            <canvas id="reviewDistributionChart"></canvas>
+        </div>
+
+        <!-- Review Form -->
+        <form id="review-form" style="margin-top: 20px;">
+            <h2>Write a Review</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="rating">Rating:</label>
+            <div class="rating-input">
+                <input type="radio" id="star5" name="rating" value="5" required>
+                <label for="star5">5 stars</label>
+                <input type="radio" id="star4" name="rating" value="4">
+                <label for="star4">4 stars</label>
+                <input type="radio" id="star3" name="rating" value="3">
+                <label for="star3">3 stars</label>
+                <input type="radio" id="star2" name="rating" value="2">
+                <label for="star2">2 stars</label>
+                <input type="radio" id="star1" name="rating" value="1">
+                <label for="star1">1 star</label>
+            </div>
+
+            <label for="comment">Review:</label>
+            <textarea id="comment" name="comment" rows="4" required></textarea>
+            <button type="submit">Submit Review</button>
+        </form>
+    </section>
+
+</main>
+
+
+

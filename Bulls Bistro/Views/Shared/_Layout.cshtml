@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulls Bistro</title>
+    <link rel="icon" href="~css/images/usf.png" type="image/icon type">
+
+    <!-- custom css link -->
+    <link rel="stylesheet" href="~/css/styles.css">
+    <link rel="stylesheet" href="~/css/media_query.css">
+
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- ionicon link -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+
+        <!-- #HEADER -->
+        <nav class="navbar">
+            <div class="navbar-wrapper">
+                <a href="@Url.Action("Index", "Home")">
+                    <img src="~/images/bulls bistro.png" alt="logo" width="200">
+                </a>
+                <ul class="navbar-nav">
+                    <li>
+                        @Html.ActionLink("Home", "Index", "", null, new { @class = "nav-link" })
+                    </li>
+                    <li>
+                        @Html.ActionLink("Hours", "Hours", "", null, new { @class = "nav-link" })
+                    </li>
+                    <li>
+                        @Html.ActionLink("Reviews", "Reviews", "", null, new { @class = "nav-link" })
+                    </li>
+                    <li>
+                        @Html.ActionLink("About", "About", "", null, new { @class = "nav-link" })
+                    </li>
+
+
+                </ul>
+                <div class="navbar-btn-group">
+                    <button class="menu-toggle-btn">
+                        <span class="line one"></span>
+                        <span class="line two"></span>
+                        <span class="line three"></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <div class="cart-box"></div>
+    </div>
+
+
+
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+
+    <!-- custom js link -->
+    <script src="~/js/script.js"></script>
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</body>
+</html>
+

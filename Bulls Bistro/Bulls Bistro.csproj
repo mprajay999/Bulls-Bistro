@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>Bulls_Bistro</RootNamespace>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'http' " />
+  <ItemGroup>
+    <Folder Include="wwwroot\images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="wwwroot\css\media_query.css" />
+    <Content Remove="wwwroot\css\styles.css" />
+    <Content Remove="wwwroot\js\script.js" />
+    <Content Remove="wwwroot\images\" />
+    <Content Remove="wwwroot\images\usf.png" />
+    <Content Remove="wwwroot\images\bulls bistro.png" />
+    <Content Remove="wwwroot\images\ERD.png" />
+    <Content Remove="wwwroot\images\food1.png" />
+    <Content Remove="wwwroot\images\food2.png" />
+    <Content Remove="wwwroot\images\food3.png" />
+    <Content Remove="wwwroot\images\prajay.jpeg" />
+    <Content Remove="wwwroot\images\sanjana.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="wwwroot\css\media_query.css" />
+    <None Include="wwwroot\css\styles.css" />
+    <None Include="wwwroot\js\script.js" />
+    <None Include="wwwroot\images\usf.png" />
+    <None Include="wwwroot\images\bulls bistro.png" />
+    <None Include="wwwroot\images\ERD.png" />
+    <None Include="wwwroot\images\food1.png" />
+    <None Include="wwwroot\images\food2.png" />
+    <None Include="wwwroot\images\food3.png" />
+    <None Include="wwwroot\images\prajay.jpeg" />
+    <None Include="wwwroot\images\sanjana.jpeg" />
+  </ItemGroup>
+</Project>
