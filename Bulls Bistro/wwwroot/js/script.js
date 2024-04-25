@@ -291,7 +291,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 data: {
                     labels: ['1 star', '2 stars', '3 stars', '4 stars', '5 stars'],
                     datasets: [{
-                        label: 'Review Distribution',
+                        label: 'Count',
                         data: Object.values(reviewCount),
                         backgroundColor: [
                             'rgba(255, 99, 132, 0.2)',
@@ -446,7 +446,7 @@ const canvas2 = document.getElementById('PeakTimingsChart').getContext('2d');
 
 // Create the chart for PeakTimingsChart
 const PeakTimingsChart = new Chart(canvas2, {
-    type: 'bar',
+    type: 'line',
     data: peakTimingsData,
     options: {
         scales: {

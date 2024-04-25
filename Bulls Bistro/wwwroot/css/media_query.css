@@ -472,6 +472,6 @@
   
   .chart-container {
     width: 48%; /* Adjust width for two charts side by side */
-    margin-bottom: 20; /* Remove bottom margin for adjacent charts */
+    margin-bottom: 20px; /* Remove bottom margin for adjacent charts */
   }
 }
