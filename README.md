@@ -4,13 +4,13 @@ Bulls Bistro is a restaurant website developed using .NET 7 with HTML, CSS, Java
 
 ## Overview
 
-Bulls Bistro is a full-stack web application that serves as a digital platform for a restaurant. It provides users with an interactive experience to explore the restaurant's menu, view reviews, and visualize various data using Chart.js. The application also enables restaurant administrators to manage menu items, customer reviews, and other restaurant information through CRUD operations.
+Bulls Bistro is a full-stack web application that serves as a digital platform for a restaurant. It provides users with an interactive experience to explore the restaurant's location, view reviews, and visualize various data using Chart.js. The application also enables restaurant administrators to manage menu items, customer reviews, and other restaurant information through CRUD operations.
 
 ### Features
 
-- Display restaurant menu and information.
+- Display restaurant location and information.
 - Visualize restaurant data using Chart.js for insights.
-- Implement CRUD operations for managing restaurant information.
+- Implement CRUD operations for managing restaurant reviews.
 - Responsive design for seamless user experience across devices.
 
 ## Getting Started
