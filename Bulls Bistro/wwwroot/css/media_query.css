@@ -448,3 +448,30 @@
   .services { grid-template-columns: repeat(3, 1fr); }
 
 }
+
+.charts-container {
+  display: flex;
+  flex-direction: column; /* Display charts in a column */
+  margin-bottom: 20px; /* Optional: Add some space between the charts */
+}
+
+.chart-container {
+  width: 100%; /* Occupy full width */
+  text-align: center;
+  border-radius: 5px; /* Optional: Add border radius */
+  margin-bottom: 40px; /* Optional: Add some space between charts */
+}
+
+/* Apply different styles for smaller screens */
+@media (min-width: 768px) {
+  .charts-container {
+    flex-direction: row; /* Display charts side by side for larger screens */
+    flex-wrap: wrap; /* Allow wrapping of chart containers */
+    justify-content: space-between; /* Distribute charts evenly */
+  }
+  
+  .chart-container {
+    width: 48%; /* Adjust width for two charts side by side */
+    margin-bottom: 20; /* Remove bottom margin for adjacent charts */
+  }
+}
